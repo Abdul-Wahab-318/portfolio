@@ -3,6 +3,7 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
 }
 
 :root{
@@ -12,6 +13,8 @@
     --socialLinks:#212431;
     --mainGray:#a8a9b4;
     --lightBlue:#149ddd;
+    --headingDarkBlue:#173b6c;
+    --textBlack:#272829;
 }
 
 .header{
@@ -33,7 +36,9 @@
     right: 0;
     z-index: 9;
 }
-
+.section-padding-y{
+    padding: 60px 0px;
+}
 
 .header-toggle-btn{
     position: fixed;
@@ -82,6 +87,10 @@
     border-radius: 50%;
     border: 8px solid var(--profileBorder);
     margin-top: 15px;
+    transition: all 200ms ease;
+}
+.profile .profile-img img:hover{
+    border: 8px solid var(--lightBlue);
 }
 
 .profile .name {
@@ -141,9 +150,11 @@
     background-color: var(--socialLinks);
     margin: 0 4px;
     border-radius: 50%;
+    transition: all 200ms ease;
 }
 .social-links ul li:hover{
-    animation: iconHover 200ms ease forwards;
+    /*animation: iconHover 200ms ease forwards;*/
+    background-color: #149ddd;
 }
 @keyframes iconHover{
     100%{
@@ -317,6 +328,76 @@
       width: 100%;
     }
   }
+
+
+
+/* !!!!!!!!!!!!!!!!!!  ABOUT SECTION !!!!!!!!!!!!!!  */ 
+
+
+  .lead-text{
+      margin-bottom: 30px;
+  }
+  .lead-text h1{
+      color:  var(--headingDarkBlue);
+      position: relative;
+      font-size: 32px;
+      font-weight: 600;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+  }
+  .lead-text h1::before{
+      display: block;
+      content: "";
+      position: absolute;
+      bottom: 0%;
+      left: 0%;
+      width: 51px;
+      height: 3px;
+      background-color: var(--lightBlue);
+  }
+  .lead-text p{
+      margin-bottom: unset;
+  }
+
+  .about-details-caption{
+
+  }
+  .about-details-caption h1{
+      font-size: 28px;
+      color: var(--headingDarkBlue);
+      font-weight: 600;
+  }
+  .about-details-caption p{
+      font-style: italic;
+      color: var(--textBlack);
+      font-size: 17px;
+  }
+
+  .details-caption-list {
+    margin: 25px 0;
+  }
+  .details-caption-list div{
+      padding: 0 0;
+  }
+  .details-caption-list div ul{
+      margin:  0;
+  }
+  .details-caption-list div ul li{
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+  }
+  .details-caption-list div ul li i{
+      color: var(--lightBlue);
+      font-size: 14px;
+  }
+  .details-caption-list div ul li span:nth-child(2){
+      font-weight: 600;
+      margin-left: 5px;
+      margin-right: 6px;
+  }
+
+
 
 
 
