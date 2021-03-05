@@ -15,6 +15,7 @@
     --lightBlue:#149ddd;
     --headingDarkBlue:#173b6c;
     --textBlack:#272829;
+    --bglight:#f5f8fd;
 }
 
 .header{
@@ -77,9 +78,7 @@
 }
 
 
-.profile{
 
-}
 .profile .profile-img{
     text-align: center;
 }
@@ -90,7 +89,7 @@
     transition: all 200ms ease;
 }
 .profile .profile-img img:hover{
-    border: 8px solid var(--lightBlue);
+    border: 8px solid var(--primaryDarkBlue);
 }
 
 .profile .name {
@@ -154,11 +153,11 @@
 }
 .social-links ul li:hover{
     /*animation: iconHover 200ms ease forwards;*/
-    background-color: #149ddd;
+    background-color: var(--lightBlue);
 }
 @keyframes iconHover{
     100%{
-        background-color: #149ddd;
+        background-color: var(--lightBlue);
     }
 }
 .default-icon-anime{
@@ -186,9 +185,7 @@
 .navbar{
     margin-top: 30px;
 }
-.navbar .navbar-inner ul{
 
-}
 .navbar .navbar-inner ul li{
     margin-bottom: 20px;
 }
@@ -359,9 +356,7 @@
       margin-bottom: unset;
   }
 
-  .about-details-caption{
-
-  }
+  
   .about-details-caption h1{
       font-size: 28px;
       color: var(--headingDarkBlue);
@@ -398,7 +393,30 @@
   }
 
 
+  /*------------------------ SKILL SECTION ---- SKILL SECTION--------------------------------!!!!!!!!!!!*/
 
+  .skill{
+      background-color: var(--bglight);
+  }
+  .skill-list-inner ul li{
+    margin: 10px 0;
+    font-size: 17px;
+    font-weight: 600;
+    transition: all 500ms ease-in ;
+   
+  }
+  .skill-list-inner ul li:hover i{
+    animation: rotateIcon 500ms ease-in 100ms  forwards;
+  }
+  .skill-list-inner ul li:hover {
+      color: var(--lightBlue);
+  }
+  @keyframes rotateIcon{
+      100%{
+          transform: rotate(360deg);
+          color: var(--lightBlue);
+      }
+  }
 
 
 
@@ -419,6 +437,59 @@
     .intro-name h1{
         font-size: 28px;
       }
+
+      /*1!!!!!!!!!!!!!!ABOUT SECTION !!!!!!!!!!!!*/
+
+    .lead-text{
+        margin-bottom: 30px;
+    }
+    .lead-text h1{
+        font-size: 28px;
+    }
+    .lead-text h1::before{
+        width: 45px;
+        height: 3px;
+    }
+    .lead-text p{
+        margin-bottom: unset;
+        font-size: 15px;
+    }
+  
+    
+    .about-details-caption h1{
+        font-size: 24px;
+    }
+    .about-details-caption p{
+        font-size: 15px !important;
+    }
+  
+    .details-caption-list {
+      margin: 25px 0;
+    }
+    .details-caption-list div{
+        padding: 0 0;
+    }
+    .details-caption-list div ul{
+        margin:  0 ;
+    }
+    .details-caption-list div:nth-child(2){
+        padding-left: 10px;
+    }
+    .details-caption-list div ul li{
+        margin-bottom: 10px;
+    }
+    .details-caption-list div ul li i{
+        font-size: 13px;
+    }
+    .details-caption-list div ul li span:nth-child(2){
+        font-size: 14px;
+        margin-left: 2px;
+        margin-right: 1px;
+        white-space: nowrap;
+    }
+    .details-caption-list div ul li span:nth-child(3){
+        font-size: 14px;
+    }
       
 }
 
@@ -432,6 +503,45 @@
     }
     .intro-name h1{
         font-size: 26px;
+    }
+    /*1!!!!!!!!!!!!!!ABOUT SECTION !!!!!!!!!!!!*/
+
+
+    .lead-text{
+        margin-bottom: 30px;
+    }
+    .lead-text h1{
+        font-size: 32px;
+       
+    }
+   
+    .lead-text p{
+        margin-bottom: unset;
+    }
+  
+    .about-details-caption{
+        margin-top: 30px;
+    }
+    .about-details-caption h1{
+        font-size: 28px;
+    }
+    .about-details-caption p{
+        font-size: 17px;
+    }
+  
+    .details-caption-list {
+      margin: 25px 0;
+    }
+    .details-caption-list div ul li i{
+        font-size: 13px;
+    }
+    .details-caption-list div ul li span:nth-child(2){
+        margin-left: 4px;
+        margin-right: 1px;
+        font-size: 16px;
+    }
+    .details-caption-list div ul li span:nth-child(3){
+        font-size: 16px;
     }
 
 }
@@ -451,6 +561,39 @@
     .intro-name h1{
         font-size: 23px;
     }
+
+
+     /*1!!!!!!!!!!!!!!ABOUT SECTION !!!!!!!!!!!!*/
+
+  
+    .about-details-caption{
+        margin-top: 30px;
+    }
+    .about-details-caption h1{
+        font-size: 28px;
+    }
+    .about-details-caption p{
+        font-size: 17px;
+    }
+  
+    .details-caption-list {
+      margin: 15px 0;
+    }
+    .details-caption-list div ul{
+        margin: 10px 0;
+    }
+    .details-caption-list div ul li i{
+        font-size: 13px;
+    }
+    .details-caption-list div ul li span:nth-child(2){
+        margin-left: 4px;
+        margin-right: 1px;
+        font-size: 16px;
+    }
+    .details-caption-list div ul li span:nth-child(3){
+        font-size: 16px;
+    }
+
 }
 
 
@@ -473,6 +616,51 @@
         font-weight: 300;
         font-size: 18px;
     }
+
+     /*1!!!!!!!!!!!!!!ABOUT SECTION !!!!!!!!!!!!*/
+
+  
+    .lead-text h1{
+        font-size: 26px;
+    }
+    .lead-text h1::before{
+        width: 43px;
+        height: 3px;
+    }
+    .lead-text p{
+        margin-bottom: unset;
+        font-size: 15px;
+    }
+
+     .about-details-caption{
+        margin-top: 30px;
+    }
+    .about-details-caption h1{
+        font-size: 22px;
+    }
+    .about-details-caption p{
+        font-size: 15px !important;
+    }
+  
+    .details-caption-list {
+      margin: 10px 0;
+    }
+    .details-caption-list div ul{
+        margin: 5px 0;
+    }
+    .details-caption-list div ul li i{
+        font-size: 12px;
+    }
+    .details-caption-list div ul li span:nth-child(2){
+        margin-left: 4px;
+        margin-right: 5px;
+        font-size: 15px;
+    }
+    .details-caption-list div ul li span:nth-child(3){
+        font-size: 15px;
+    }
+
+
 }
 
 

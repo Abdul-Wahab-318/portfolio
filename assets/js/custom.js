@@ -6,7 +6,7 @@ var blackOverlay=document.getElementById('blackOverlay');
 var header=document.getElementById('header');
 const headerBtn=document.getElementById('headerBtn');
 const crossHeader=document.getElementById('crossHeader');
-
+const kingCrimson=document.querySelector('#kingCrimson');
 //
 
 profile.addEventListener('click',function(){
@@ -80,11 +80,17 @@ function toggleHeaderAnime()
   h1.removeAttribute('data-text');
   console.log('yee');
   h1.innerHTML="WEB DEVELOPER ...";
-  h1.setAttribute('data-text','WEB DEVLOPER ...');
+  h1.setAttribute('data-text','WEB DEVELOPER ...');
               
   })
 
+  //play kingCrimson Sound Effect
 
+  function playAudio()
+  {
+    kingCrimson.play();
+    kingCrimson.volume=0.2;
+  }
 
 
 
