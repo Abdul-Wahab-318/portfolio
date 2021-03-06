@@ -354,6 +354,7 @@
   }
   .lead-text p{
       margin-bottom: unset;
+      color: var(--textBlack);
   }
 
   
@@ -398,27 +399,138 @@
   .skill{
       background-color: var(--bglight);
   }
+  .skill-list-inner ul {
+      margin: 0 0;
+  }
   .skill-list-inner ul li{
     margin: 10px 0;
     font-size: 17px;
     font-weight: 600;
     transition: all 500ms ease-in ;
-   
+  }
+  .skill-list div:nth-child(2) :first-child li:nth-child(2){
+      position: relative;
+  }
+  .skill-list div:nth-child(2) :first-child li:nth-child(2):hover::after{
+      opacity: 1;
+      color: var(--lightBlue);
+  }
+  .skill-list div:nth-child(2) :first-child li:nth-child(2)::after{
+      transition: all 500ms ease-in;
+  }
+  .skill-list div:nth-child(2) :first-child li:nth-child(2)::after{
+      content: 'v.4.x';
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 0%;
+      transform: translateY(-50%);
+      opacity: 0;
+  }
+  .skill-list-inner ul li i{
+      transition: all 500ms ease-in;
+      transition-delay: 50ms;
   }
   .skill-list-inner ul li:hover i{
-    animation: rotateIcon 500ms ease-in 100ms  forwards;
+    transform: rotate(360deg);
+    color: var(--lightBlue);
+    
   }
   .skill-list-inner ul li:hover {
       color: var(--lightBlue);
-  }
-  @keyframes rotateIcon{
-      100%{
-          transform: rotate(360deg);
-          color: var(--lightBlue);
-      }
+      
   }
 
 
+
+  /*_____---------_____---RESUME SECTION _______-----RESUME SECTION--_____---*/
+
+
+  .summary-heading h1{
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 15px;
+  }
+  .summary-details{
+      padding-left: 24px;
+      position: relative;
+      border-left: 2px solid var(--headingDarkBlue);
+  }
+  .summary-details::before{
+      position: absolute;
+      top: 0%;
+      left: -9px;
+      content: "";
+      display: block;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: white;
+      border: 2px solid var(--headingDarkBlue);
+  }
+  .summary-details::after{
+    position: absolute;
+    bottom: 0%;
+    left: -9px;
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid var(--headingDarkBlue);
+}
+  .summary-details h6{
+      font-weight: 600;
+  }
+  .summary-details p{
+      font-style: italic;
+      font-size: 17px;
+      color: var(--textBlack);
+  }
+  .summary-details ul{
+      padding-left: 20px;
+  }
+  .summary-details ul li{
+      list-style-type: disc;
+      margin-bottom: 10px;
+  }
+  .summary-circle{
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: white;
+      border: 2px solid var(--headingDarkBlue);
+  }
+  .dates{
+      display: inline-block;
+      padding: 3px 12px !important;
+      background-color: #e4edf9;
+      width: auto;
+      font-weight: 600;
+  }
+  .summary-details h5{
+      font-size: 16px;
+      font-style: italic;
+      margin-bottom: 20px;
+      margin-top: 8px;
+  }
+  .education-details{
+
+  }
+  .education-details h5{
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 20px;
+    margin-top: 8px;
+  }
+  .resume-summary .row .col-lg-6:last-child div:nth-child(2)::after{
+    all: initial;
+  }
+  .resume-summary .row .col-lg-6:last-child div:nth-child(2) h6:nth-child(2){
+      padding-top: 20px;
+      background-color: red;
+  }
 
 
 
@@ -490,7 +602,25 @@
     .details-caption-list div ul li span:nth-child(3){
         font-size: 14px;
     }
+
+    /*------------------------ SKILL SECTION ---- SKILL SECTION--------------------------------!!!!!!!!!!!*/
+
+
+    .skill-list-inner ul li{
+      margin: 10px 0;
+      font-size: 15px;
+    }
+    .skill-list div:nth-child(2) :first-child li:nth-child(2)::after{
+        transition: all 500ms ease-in;
+    }
+    .skill-list-inner ul li:hover i{
+      transform: rotate(360deg);
+      color: var(--lightBlue);
       
+    }
+    .skill-list-inner ul li:hover {
+        color: var(--lightBlue);  
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -594,6 +724,16 @@
         font-size: 16px;
     }
 
+    /*------------------------ SKILL SECTION ---- SKILL SECTION--------------------------------!!!!!!!!!!!*/
+    .skill-list-inner ul:nth-child(1) {
+        margin: 0px 0;
+        margin-bottom: 10px;
+    }
+    .skill-list-inner ul li{
+        margin: 10px 0;
+        font-size: 17px;
+    }
+
 }
 
 
@@ -657,6 +797,16 @@
         font-size: 15px;
     }
     .details-caption-list div ul li span:nth-child(3){
+        font-size: 15px;
+    }
+
+    /*------------------------ SKILL SECTION ---- SKILL SECTION--------------------------------!!!!!!!!!!!*/
+    .skill-list-inner ul {
+        margin: 0px 0;
+        margin-bottom: 10px;
+    }
+    .skill-list-inner ul li{
+        margin: 10px 0;
         font-size: 15px;
     }
 
