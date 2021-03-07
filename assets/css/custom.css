@@ -527,10 +527,7 @@
   .resume-summary .row .col-lg-6:last-child div:nth-child(2)::after{
     all: initial;
   }
-  .resume-summary .row .col-lg-6:last-child div:nth-child(2) h6:nth-child(2){
-      padding-top: 20px;
-      background-color: red;
-  }
+  
 
 
 
@@ -621,6 +618,55 @@
     .skill-list-inner ul li:hover {
         color: var(--lightBlue);  
     }
+
+
+    /*_____---------_____---RESUME SECTION _______-----RESUME SECTION--_____---*/
+
+
+    .summary-heading h1{
+        font-size: 22px;
+
+    }
+    .summary-details{
+        padding-left: 24px;
+    }
+    .summary-details::before{
+        top: 0%;
+        left: -9px;
+        width: 14px;
+        height: 14px;
+    }
+    .summary-details::after{
+        bottom: 0%;
+        left: -9px;
+        width: 14px;
+        height: 14px;
+
+    }
+    .summary-details h6{
+        font-weight: 600;
+        
+    }
+    .summary-details p{
+        font-style: italic;
+        font-size: 16px;
+        color: var(--textBlack);
+    }
+    .summary-details ul{
+        padding-left: 20px;
+    }
+    .summary-details ul li{
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    .dates{
+        font-size: 15px;
+    }
+    .summary-details h5{
+        font-size: 16px;
+    }
+
+
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -810,6 +856,46 @@
         font-size: 15px;
     }
 
+
+    /*_____---------_____---RESUME SECTION _______-----RESUME SECTION--_____---*/
+
+
+        .summary-heading h1{
+            font-size: 22px;
+        }
+        .summary-details::before{
+            top: 0%;
+            left: -8px;
+            width: 14px;
+            height: 14px;
+        }
+        .summary-details::after{
+            bottom: 0%;
+            left: -8px;
+            width: 14px;
+            height: 14px;
+
+        }
+        .summary-details h6{
+            font-weight: 600;
+            
+        }
+        .summary-details p{
+            font-size: 16px;
+        }
+        .summary-details ul li{
+            font-size: 15px;
+        }
+        .dates{
+            font-size: 15px;
+        }
+        .summary-details h5{
+            font-size: 16px;
+        }
+
+        .resume-summary .row .col-lg-6:nth-child(2){
+            margin-top: 30px;
+        }
 
 }
 
