@@ -194,8 +194,9 @@
     align-items: center;
     padding: 5px;
 }
-.navbar .navbar-inner ul li a img{
-    width: 25px;
+.navbar .navbar-inner ul li a i::before{
+    font-size: 25px;
+    transition: all 300ms ease;
 }
 .navbar .navbar-inner ul li a:hover{
     text-decoration-line: none;
@@ -205,11 +206,15 @@
     color: var(--mainGray);
     font-size: 17px;
     margin-left: 8px;
+    transition: all 300ms ease;
 }
 .navbar .navbar-inner ul li a:hover span{
-    animation: hoverTextNavbar 200ms ease  forwards;
+    /*animation: hoverTextNavbar 200ms ease  forwards;*/
+    color: white;
 }
-
+.navbar .navbar-inner ul li a:hover i::before{
+    color: var(--lightBlue);
+}
 @keyframes hoverIconNavbar{
     100%{
         color: #149ddd;
