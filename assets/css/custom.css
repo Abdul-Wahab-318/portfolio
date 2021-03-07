@@ -515,22 +515,94 @@
       margin-bottom: 20px;
       margin-top: 8px;
   }
-  .education-details{
 
-  }
-  .education-details h5{
-    font-size: 16px;
-    font-style: italic;
-    margin-bottom: 20px;
-    margin-top: 8px;
-  }
+
   .resume-summary .row .col-lg-6:last-child div:nth-child(2)::after{
     all: initial;
   }
-  
+
+
+  /*-------______PORTFOLIO SECTION -----____________ PORTFOLIO SECTION------PORTFOLIO*/
+
+        .portfolio{
+            background-color: var(--bglight);
+        }
+        .portfolio-slider{
+            margin-top: 50px;
+            background-color: rgba(228,237,249,0.4);
+            padding: 40px 40px;
+            border-radius: 8px;
+        }
+        .portfolio-slider .portfolio-owl .item .item-inner{
+           position: relative;
+        }
+        .portfolio-slider .portfolio-owl .item .item-inner:hover .item-link{
+            opacity: 1;
+        }
+        .portfolio-slider .portfolio-owl .item .item-inner .item-link
+        {
+            transition: all 300ms ease ;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            left: 50%;
+            width: 70px;
+            height: 70px;
+            background-color: rgba(228,237,249,0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .portfolio-slider .portfolio-owl .item .item-inner .item-link i{
+            font-size: 20px;
+            color: var(--lightBlue);
+        }
+        .portfolio-slider .portfolio-owl .owl-item{
+            padding: 0 180px;
+        }
+        .portfolio-slider .portfolio-owl .owl-item img{
+            border-radius: 8px;
+            position: relative;
+        }
+        .portfolio-slider .portfolio-owl .owl-nav{
+            margin-top: 0;
+        }
+        .portfolio-slider .portfolio-owl .owl-nav i{
+            color: var(--lightBlue);
+        }
+        .portfolio-slider .portfolio-owl .owl-nav .owl-prev{
+            background-color: #e4edf9;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            outline: none;
+            margin: 0;
+
+        }
+        .portfolio-slider .portfolio-owl .owl-nav .owl-next{
+            background-color: #e4edf9;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            outline: none;
+            margin: 0;
+        }
+        
 
 
 
+
+
+        
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     .header-toggle-btn{
@@ -667,6 +739,51 @@
     }
 
 
+     /*-------______PORTFOLIO SECTION -----____________ PORTFOLIO SECTION------PORTFOLIO*/
+
+
+    .portfolio-slider{
+        margin-top: 50px;
+        padding: 40px 40px;
+        border-radius: 8px;
+    }
+    .portfolio-slider .portfolio-owl .item .item-inner:hover .item-link{
+        opacity: 1;
+    }
+    .portfolio-slider .portfolio-owl .item .item-inner .item-link
+    {
+        width: 70px;
+        height: 70px;
+    }
+    .portfolio-slider .portfolio-owl .item .item-inner .item-link i{
+        font-size: 20px;
+    }
+    .portfolio-slider .portfolio-owl .owl-item{
+        padding: 0 70px;
+    }
+    .portfolio-slider .portfolio-owl .owl-item img{
+        border-radius: 8px;
+        position: relative;
+    }
+    .portfolio-slider .portfolio-owl .owl-nav{
+        margin-top: 0;
+    }
+    .portfolio-slider .portfolio-owl .owl-nav i{
+        color: var(--lightBlue);
+    }
+    .portfolio-slider .portfolio-owl .owl-nav .owl-prev{
+        width: 50px;
+        height: 50px;
+
+    }
+    .portfolio-slider .portfolio-owl .owl-nav .owl-next{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    
+
+
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -719,6 +836,51 @@
     .details-caption-list div ul li span:nth-child(3){
         font-size: 16px;
     }
+
+     /*-------______PORTFOLIO SECTION -----____________ PORTFOLIO SECTION------PORTFOLIO*/
+
+
+     .portfolio-slider{
+        margin-top: 50px;
+        padding: 40px 40px;
+        border-radius: 8px;
+    }
+    .portfolio-slider .portfolio-owl .item .item-inner:hover .item-link{
+        opacity: 1;
+    }
+    .portfolio-slider .portfolio-owl .item .item-inner .item-link
+    {
+        width: 70px;
+        height: 70px;
+    }
+    .portfolio-slider .portfolio-owl .item .item-inner .item-link i{
+        font-size: 20px;
+    }
+    .portfolio-slider .portfolio-owl .owl-item{
+        padding: 0 50px;
+    }
+    .portfolio-slider .portfolio-owl .owl-item img{
+        border-radius: 8px;
+        position: relative;
+    }
+    .portfolio-slider .portfolio-owl .owl-nav{
+        margin-top: 0;
+    }
+    .portfolio-slider .portfolio-owl .owl-nav i{
+        color: var(--lightBlue);
+    }
+    .portfolio-slider .portfolio-owl .owl-nav .owl-prev{
+        width: 50px;
+        height: 50px;
+        left: -20px;
+
+    }
+    .portfolio-slider .portfolio-owl .owl-nav .owl-next{
+        width: 50px;
+        height: 50px;
+        right: -20px;
+    }
+    
 
 }
 
@@ -778,6 +940,51 @@
     .skill-list-inner ul li{
         margin: 10px 0;
         font-size: 17px;
+    }
+
+    /*-------______PORTFOLIO SECTION -----____________ PORTFOLIO SECTION------PORTFOLIO*/
+
+
+    .portfolio-slider{
+        margin-top: 50px;
+        padding: 30px 30px;
+        border-radius: 8px;
+    }
+    .portfolio-slider .portfolio-owl .item .item-inner:hover .item-link{
+        opacity: 1;
+    }
+    .portfolio-slider .portfolio-owl .item .item-inner .item-link
+    {
+        width: 70px;
+        height: 70px;
+    }
+    .portfolio-slider .portfolio-owl .item .item-inner .item-link i{
+        font-size: 20px;
+    }
+    .portfolio-slider .portfolio-owl .owl-item{
+        padding: 0 40px;
+    }
+    .portfolio-slider .portfolio-owl .owl-item img{
+        border-radius: 8px;
+        position: relative;
+    }
+    .portfolio-slider .portfolio-owl .owl-nav{
+        margin-top: 0;
+    }
+    .portfolio-slider .portfolio-owl .owl-nav i{
+        color: var(--lightBlue);
+        font-size: 15px;
+    }
+    .portfolio-slider .portfolio-owl .owl-nav .owl-prev{
+        width: 45px;
+        height: 45px;
+        left: -20px;
+
+    }
+    .portfolio-slider .portfolio-owl .owl-nav .owl-next{
+        width: 45px;
+        height: 45px;
+        right: -20px;
     }
 
 }
@@ -895,6 +1102,56 @@
 
         .resume-summary .row .col-lg-6:nth-child(2){
             margin-top: 30px;
+        }
+
+
+        .portfolio-slider{
+            margin-top: 50px;
+            padding: 20px 20px;
+            border-radius: 8px;
+        }
+        .portfolio-slider .portfolio-owl .item .item-inner:hover .item-link{
+            opacity: 1;
+        }
+        .portfolio-slider .portfolio-owl .item .item-inner .item-link
+        {
+            width: 50px;
+            height: 50px;
+        }
+        .portfolio-slider .portfolio-owl .item .item-inner .item-link i{
+            font-size: 17px;
+        }
+        .portfolio-slider .portfolio-owl .owl-item{
+            padding: 0 00px;
+        }
+        .portfolio-slider .portfolio-owl .owl-item img{
+            border-radius: 8px;
+            position: relative;
+        }
+        .portfolio-slider .portfolio-owl .owl-nav{
+            margin-top: 0;
+        }
+        .portfolio-slider .portfolio-owl .owl-nav i{
+            color: var(--lightBlue);
+            font-size: 15px;
+        }
+        .portfolio-slider .portfolio-owl .owl-nav{
+            margin-top: 20px;
+        }
+        .portfolio-slider .portfolio-owl .owl-nav .owl-prev{
+            width: 45px;
+            height: 45px;
+            transform: unset;
+            position: static;
+            margin: 0 6px;
+    
+        }
+        .portfolio-slider .portfolio-owl .owl-nav .owl-next{
+            width: 45px;
+            height: 45px;
+            transform: unset;
+            position: static;
+            margin: 0 6px;
         }
 
 }

@@ -141,13 +141,32 @@ $('a[href*="#"]')
   }
 });
 
-// shuffle js 
+// owl carousel
 
-var Shuffle = window.Shuffle;
-var element = document.querySelector('.my-shuffle-container');
-var sizer = element.querySelector('.my-sizer-element');
-
-var shuffleInstance = new Shuffle(element, {
-  itemSelector: '.picture-item',
-  sizer: sizer // could also be a selector: '.my-sizer-element'
-});
+$('.portfolio-owl').owlCarousel({
+  loop:true,
+  margin:10,
+  nav:true,
+  loop:true,
+  singleItem:true,
+  dots:false,
+  margin:0,
+  autoplayHoverPause:true,
+  autoplay:true,
+  autoplayTimeout:4000,
+  navText:[
+    '<i class="fas fa-chevron-left"></i>',
+    '<i class="fas fa-chevron-right"></i>'
+  ],
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:1
+      },
+      1000:{
+          items:1
+      }
+  }
+})
