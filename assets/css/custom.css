@@ -598,11 +598,82 @@
         }
         
 
+/*_________--SERVICE SECTION ____------ SERVICE SECTION ___---- SERVICE SECTION --*/
+
+        .service-detail-inner{
+            display: flex;
+            position: relative;
+            z-index: 10;
+            padding: 20px;
+        }
+        .service-detail-inner:hover::before{
+            width: 100%;
+            border: 1px solid var(--lightBlue);
+            background-color: var(--primaryDarkBlue);
+        }
+        .service-detail-inner:hover .service-detail-icon i::before{
+            color: var(--lightBlue);
+            
+        }
+        .service-detail-inner:hover .service-detail-caption h6{
+            color: white;
+            
+        }
+        .service-detail-inner:hover .service-detail-caption p{
+            color: white;
+           
+        }
+        .service-detail-inner:hover .service-detail-icon{
+            background-color: white;
+            
+        }
+        .service-detail-inner::before{
+            display: block;
+            content: "";
+            z-index: -80;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: var(--lightBlue);
+            width: 0%;
+            height: 100%;
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 600ms ease;
+            border: 0px solid var(--lightBlue);
+        }
+        .service-detail-icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            border-radius: 50%;
+            background-color: var(--lightBlue);
+            border: 1px solid var(--lightBlue);
+            margin-right: 18px;
+            transition: all 600ms ease;
+        }
+        .service-detail-icon i{
+            font-size: 40px;
+            transition: all 600ms ease;
+        }
+        .service-detail-caption h6{
+            font-size: 22px;
+            color: var(--textBlack);
+            font-weight: 600;
+            margin-bottom: 18px;
+            transition: all 600ms ease;
+        }
+        .service-detail-caption p{
+            font-style: italic;
+            font-size: 17px;
+            margin-bottom: 0;
+            transition: all 600ms ease;
+        }
 
 
+/*MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIAMEDIA MEDIA MEDIA MEDIAMEDIA MEDIA MEDIA MEDIAMEDIA MEDIA MEDIA  MEDIA MEDIA MEDIA*/
 
-
-        
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     .header-toggle-btn{
@@ -781,6 +852,30 @@
         height: 50px;
         border-radius: 50%;
     }
+
+
+    /*_________--SERVICE SECTION ____------ SERVICE SECTION ___---- SERVICE SECTION --*/
+
+    .service-detail-inner{
+        display: flex;
+        position: relative;
+        z-index: 20;
+        padding: 20px;
+    }
+    .service-detail-icon{
+        width: 85px;
+        height: 85px;
+    }
+    .service-detail-icon i{
+        font-size: 28px;
+        transition: all 600ms ease;
+    }
+    .service-detail-caption h6{
+        font-size: 20px;
+    }
+    .service-detail-caption p{
+        font-size: 16px;
+    }
     
 
 
@@ -879,6 +974,29 @@
         width: 50px;
         height: 50px;
         right: -20px;
+    }
+
+
+     /*_________--SERVICE SECTION ____------ SERVICE SECTION ___---- SERVICE SECTION --*/
+
+    .service-detail-inner{
+        display: flex;
+        position: relative;
+        z-index: 20;
+        padding: 20px;
+    }
+    .service-detail-icon{
+        width: 85px;
+        height: 85px;
+    }
+    .service-detail-icon i{
+        font-size: 32px;
+    }
+    .service-detail-caption h6{
+        font-size: 24px;
+    }
+    .service-detail-caption p{
+        font-size: 16px;
     }
     
 
@@ -985,6 +1103,28 @@
         width: 45px;
         height: 45px;
         right: -20px;
+    }
+
+    /*_________--SERVICE SECTION ____------ SERVICE SECTION ___---- SERVICE SECTION --*/
+
+    .service-detail-inner{
+        display: flex;
+        position: relative;
+        z-index: 20;
+        padding: 20px;
+    }
+    .service-detail-icon{
+        width: 90px;
+        height: 90px;
+    }
+    .service-detail-icon i{
+        font-size: 32px;
+    }
+    .service-detail-caption h6{
+        font-size: 24px;
+    }
+    .service-detail-caption p{
+        font-size: 16px;
     }
 
 }
@@ -1152,6 +1292,32 @@
             transform: unset;
             position: static;
             margin: 0 6px;
+        }
+
+
+        /*_________--SERVICE SECTION ____------ SERVICE SECTION ___---- SERVICE SECTION --*/
+
+        .service-detail-inner{
+            padding: 20px;
+            flex-direction: column;
+            align-items: center;
+        }
+        .service-detail-icon{
+            width: 80px;
+            height: 80px;
+        }
+        .service-detail-icon i{
+            font-size: 30px;
+        }
+        .service-detail-caption {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .service-detail-caption h6{
+            font-size: 20px;
+        }
+        .service-detail-caption p{
+            font-size: 15px;
         }
 
 }
