@@ -13,8 +13,6 @@ profile.addEventListener('click',function(){
     profile.firstElementChild.classList.toggle('profileAnimationClass')
 })
 
-
-
 //remove animation from all social links when animation ends
 social.addEventListener('animationend', function(){
     social.classList.remove('default-icon-anime');
@@ -25,18 +23,14 @@ social.addEventListener('animationend', function(){
     }
 })
 
-
 /* generic functions */
 function toggleHeaderAnime()
 {
   header.classList.toggle('remove-header-anime');
   header.classList.toggle('show-header-anime');
 }
+ /**/
 
-
-
- /*   */
-  
   headerBtn.addEventListener('click',function(){
       toggleHeaderAnime();
       blackOverlay.classList.toggle('d-none');
@@ -53,8 +47,6 @@ function toggleHeaderAnime()
       headerBtn.style.display='block';
       blackOverlay.classList.toggle('d-none');
   }) // when cross is pressed on extra small screens
-
-
 
   blackOverlay.addEventListener('click',function(){
     toggleHeaderAnime();
@@ -92,18 +84,7 @@ function toggleHeaderAnime()
     kingCrimson.volume=0.2;
   }
 
-
-
-
-
 //jquery
-
-
-
-
-
-  
-
 // Select all links with hashes
 $('a[href*="#"]')
 // Remove links that don't actually link to anything
@@ -148,9 +129,7 @@ $('a[href*="#"]')
     }
   }
 });
-
 // owl carousel
-
 $('.portfolio-owl').owlCarousel({
   loop:true,
   margin:10,
@@ -178,7 +157,6 @@ $('.portfolio-owl').owlCarousel({
       }
   }
 })
-
 $('.review-owl').owlCarousel({
   loop:true,
   margin:10,
@@ -198,26 +176,12 @@ $('.review-owl').owlCarousel({
   }
 })
 
-
-
-//dark theme
-/*
-document.documentElement.style.setProperty('--cwhite', '#040b14');
-document.documentElement.style.setProperty('--bglight', 'black');
-document.documentElement.style.setProperty('--textBlack', 'white');
-document.documentElement.style.setProperty('--reviewSlider', '#040b14');
-document.documentElement.style.setProperty('--portfolioSlider', '#040b14');
-*/
-//theme switch
-
 var theme = document.querySelector('#theme');
 var themeSwitch =document.querySelector('#theme-switch');
-
 theme.addEventListener('click',function(){
   themeSwitch.classList.toggle('fa-toggle-on');
   themeSwitch.classList.toggle('fa-toggle-off');
   //changed switched icon
-
   //change colors
   if(getComputedStyle(document.documentElement).getPropertyValue('--reviewSlider')!="#040b14"){
     console.log('switching colors')
@@ -234,5 +198,4 @@ theme.addEventListener('click',function(){
     document.documentElement.style.setProperty('--reviewSlider', 'white');
     document.documentElement.style.setProperty('--portfolioSlider', 'rgba(228,237,249,0.4)');
   }
-  
 })

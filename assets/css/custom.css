@@ -776,7 +776,113 @@
         }
     
 
+/*-____-----__--CONTACT CONTACT------___CONTACT CONTACT---CONTACT __CONTACT-__-CONTACT*/
 
+        .contact{
+            background-color: var(--cwhite);
+        }
+        .contact-info{
+
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            padding: 30px 45px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            width: 50%;
+            background-color: var(--headingDarkBlue);
+            height: 85%;
+        }
+        .contact-info h1{
+            font-size: 26px;
+            color: white;
+            margin-bottom: 20px;
+        }
+        .contact-list li{
+            display: flex;
+            align-items: center;
+            color: white;
+            margin-bottom: 25px;
+        }
+        .contact-list li i{
+            font-size: 18px;
+            color: white;
+            margin-right: 10px;
+        }
+        .contact-list li i::before{
+            color: white;
+        }
+        .contact-info .social-links ul li{
+            width: 40px;
+            height: 40px;
+            background-color: var(--bglight);
+        }
+        .contact-info .social-links ul li a:hover{
+            text-decoration: none;
+        }
+        .contact-info .social-links ul li i::before{
+            color: var(--headingDarkBlue);
+            font-size: 18px;
+        }
+
+        .message-form{
+            margin-left: auto ;
+            width: 80%;
+            padding:  0 15px;
+            position: relative;
+            background-color: var(--bglight);
+            padding: 50px 0;
+            padding-right: 20px;
+        }
+        .message-form-inner{
+            width: 70%;
+            margin-left:auto ;
+        }
+        .message-form-inner h1{
+            color: var(--headingDarkBlue);
+            font-size: 25px;
+            margin-bottom: 25px;
+        }
+        .message-form-inner input{
+            width: 100%;
+            border: 0;
+            background-color: transparent;
+            outline: none;
+            border-bottom: 1px solid var(--headingDarkBlue);
+            padding-bottom: 8px;
+            color: var(--textBlack);
+        }
+        .message-form-inner input::placeholder{
+            color: var(--textBlack);
+        }
+        .message-form-inner textarea{
+            width: 100%;
+            margin-top: 50px;
+            border: 0;
+            background-color: transparent;
+            font-size: 17px;
+            outline: none;
+            border-bottom: 1px solid var(--headingDarkBlue);
+            color: var(--textBlack);
+        }
+        .message-form-inner textarea::placeholder{
+            color: var(--textBlack);
+        }
+        .message-form-inner form  .row:nth-child(2){
+            margin-top: 30px;
+        }
+        .message-form-inner button{
+            margin-top: 30px;
+            background-color: var(--headingDarkBlue);
+            width: 150px;
+            padding: 14px 0;
+            border: none;
+            outline: none;
+            color: white ;
+            font-size: 18px;
+        }
 
 
 
@@ -1015,6 +1121,69 @@
     .review-slider-inner-customer h6{
         font-size: 14px;
     }
+
+
+/*CONTACT CONTACT CONTACT CONTACTCONTACT CONTACTCONTACT CONTACTCONTACT CONTACTCONTACT CONTACTCONTACT CONTACTCONTACT CONTACT*/
+
+    .contact-info{
+
+        padding: 20px 30px;
+        width: 50%;
+        height: 85%;
+    }
+    .contact-info h1{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .contact-list li{
+        margin-bottom: 25px;
+    }
+    .contact-list li span{
+        font-size: 15px;
+    }
+    .contact-list li i{
+        font-size: 15px;
+        margin-right: 10px;
+    }
+    .contact-info .social-links ul li{
+        width: 30px;
+        height: 30px;
+    }
+    .contact-info .social-links ul li i::before{
+        font-size: 15px;
+    }
+
+    .message-form{
+        width: 80%;
+        padding:  0 15px;
+        padding: 50px 0;
+        padding-right: 20px;
+    }
+    .message-form-inner{
+        width: 70%;
+    }
+    .message-form-inner h1{
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+    .message-form-inner input{
+        padding-bottom: 8px;
+        font-size: 15px;
+    }
+    .message-form-inner textarea{
+        width: 100%;
+        margin-top: 50px;
+        font-size: 15px;
+    }
+    .message-form-inner form  .row:nth-child(2){
+        margin-top: 30px;
+    }
+    .message-form-inner button{
+        margin-top: 30px;
+        width: 120px;
+        padding: 10px 0;
+        font-size: 16px;
+    }
     
 
 
@@ -1138,7 +1307,67 @@
         font-size: 16px;
     }
 
-    
+    /*CONTACT CONTACT CONTACT CONTACTCONTACT CONTACTCONTACT CONTACTCONTACT CONTACTCONTACT CONTACTCONTACT CONTACTCONTACT CONTACT*/
+
+    .contact-info{
+
+        padding: 20px 30px;
+        width: 50%;
+        height: 85%;
+    }
+    .contact-info h1{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .contact-list li{
+        margin-bottom: 25px;
+    }
+    .contact-list li span{
+        font-size: 15px;
+    }
+    .contact-list li i{
+        font-size: 15px;
+        margin-right: 10px;
+    }
+    .contact-info .social-links ul li{
+        width: 30px;
+        height: 30px;
+    }
+    .contact-info .social-links ul li i::before{
+        font-size: 15px;
+    }
+
+    .message-form{
+        width: 80%;
+        padding:  0 15px;
+        padding: 50px 0;
+        padding-right: 20px;
+    }
+    .message-form-inner{
+        width: 70%;
+    }
+    .message-form-inner h1{
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+    .message-form-inner input{
+        padding-bottom: 8px;
+        font-size: 15px;
+    }
+    .message-form-inner textarea{
+        width: 100%;
+        margin-top: 50px;
+        font-size: 15px;
+    }
+    .message-form-inner form  .row:nth-child(2){
+        margin-top: 30px;
+    }
+    .message-form-inner button{
+        margin-top: 30px;
+        width: 120px;
+        padding: 10px 0;
+        font-size: 16px;
+    }
     
 
 }
@@ -1266,6 +1495,31 @@
     }
     .service-detail-caption p{
         font-size: 16px;
+    }
+
+    /*CONTACT___----- CONTACT---CONTACT___----- CONTACT---CONTACT___----- CONTACT---CONTACT___----- CONTACT---CONTACT___----- CONTACT---*/
+
+    .contact-info{
+        padding: 30px 45px;
+        position: absolute;
+        left: 50%;
+        top: 0%;
+        transform: translate(-50%,-105%);
+        width: 100%;
+        background-color: var(--headingDarkBlue);
+        height: 85%;
+    }
+    .message-form-inner{
+        margin: 0 auto;
+    }
+    .message-form{
+        margin:  100% auto ;
+        width: 100%;
+        padding:  0 15px;
+        position: relative;
+        background-color: var(--bglight);
+        padding: 50px 0;
+        padding-right: 20px;
     }
 
 }
@@ -1485,6 +1739,78 @@
         .review-slider-inner-customer h6{
             font-size: 14px;
         }
+
+
+/*CONTACT CONTACT__--CONTACT CONTACT CONTACT__--CONTACT CONTACT CONTACT__--CONTACT CONTACT CONTACT__--CONTACT*/
+
+        .contact-info{
+            padding: 30px 20px;
+            position: absolute;
+            left: 50%;
+            top: 0%;
+            transform: translate(-50%,-105%);
+            width: 100%;
+            background-color: var(--headingDarkBlue);
+            height: 85%;
+        }
+        .contact-info h1{
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+        .contact-list li{
+            margin-bottom: 25px;
+        }
+        .contact-list li span{
+            font-size: 15px;
+        }
+        .contact-list li i{
+            font-size: 15px;
+            margin-right: 10px;
+        }
+        .contact-info .social-links ul li{
+            width: 30px;
+            height: 30px;
+        }
+        .contact-info .social-links ul li i::before{
+            font-size: 15px;
+        }
+        .message-form-inner{
+            margin: 0 auto;
+        }
+        .message-form{
+            margin:  195% auto ;
+            width: 100%;
+            padding:  0 15px;
+            position: relative;
+            background-color: var(--bglight);
+            padding: 30px 0;
+            padding-right: 0px;
+        }
+
+        .message-form-inner h1{
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+        .message-form-inner input{
+            padding-bottom: 8px;
+            font-size: 13px;
+        }
+        .message-form-inner textarea{
+            width: 100%;
+            margin-top: 50px;
+            font-size: 15px;
+        }
+        .message-form-inner form  .row:nth-child(2){
+            margin-top: 30px;
+        }
+        .message-form-inner button{
+            margin-top: 30px;
+            width: 110px;
+            padding: 10px 0;
+            font-size: 15px;
+        }
+
+        
     
 
 
