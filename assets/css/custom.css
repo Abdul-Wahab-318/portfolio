@@ -1700,6 +1700,7 @@
         .service-detail-icon{
             width: 80px;
             height: 80px;
+            margin-right: 0;
         }
         .service-detail-icon i{
             font-size: 30px;
@@ -1745,13 +1746,12 @@
 
         .contact-info{
             padding: 30px 20px;
-            position: absolute;
-            left: 50%;
-            top: 0%;
-            transform: translate(-50%,-105%);
+            position: static;
+            transform: unset;
             width: 100%;
             background-color: var(--headingDarkBlue);
             height: 85%;
+            margin-top: 30px;
         }
         .contact-info h1{
             font-size: 22px;
@@ -1775,16 +1775,20 @@
             font-size: 15px;
         }
         .message-form-inner{
-            margin: 0 auto;
+            padding: 00px 20px;
+            margin: 0 0;
+            width: 100%;
         }
         .message-form{
-            margin:  195% auto ;
+            margin:  30px auto ;
             width: 100%;
             padding:  0 15px;
             position: relative;
             background-color: var(--bglight);
             padding: 30px 0;
             padding-right: 0px;
+            padding-bottom: 0;
+            margin-bottom: 0;
         }
 
         .message-form-inner h1{
@@ -1793,7 +1797,7 @@
         }
         .message-form-inner input{
             padding-bottom: 8px;
-            font-size: 13px;
+            font-size: 15px;
         }
         .message-form-inner textarea{
             width: 100%;
@@ -1804,10 +1808,11 @@
             margin-top: 30px;
         }
         .message-form-inner button{
-            margin-top: 30px;
             width: 110px;
             padding: 10px 0;
             font-size: 15px;
+            display: block;
+            margin: 30px auto;
         }
 
         
