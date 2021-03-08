@@ -16,6 +16,8 @@
     --headingDarkBlue:#173b6c;
     --textBlack:#272829;
     --bglight:#f5f8fd;
+    --reviewSlider:white;
+    --portfolioSlider:rgba(228,237,249,0.4);
 }
 
 .header{
@@ -27,6 +29,8 @@
     width: 300px;
     padding:  0 15px;
     background-color: var(--primaryDarkBlue);
+    overflow-x: hidden; 
+    overflow-y: auto; 
 }
 .black-overlay{
     background-color: rgb(0, 0, 0,0.5);
@@ -37,6 +41,18 @@
     right: 0;
     z-index: 9;
 }
+.theme{
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 12px;
+}
+.theme i{
+    margin-right: 5px;
+}
+
 .section-padding-y{
     padding: 60px 0px;
 }
@@ -98,7 +114,7 @@
 }
 .profile .name span{
     color: transparent;
-    -webkit-text-stroke: 0px var(--cwhite);
+    -webkit-text-stroke: 0px white;
     margin-top: 16px;
     font-weight: 300;
     font-size: 22px;
@@ -111,7 +127,7 @@
     top: 0%;
     left: 0%;
     content: attr(data-text);
-    -webkit-text-stroke: 1px var(--cwhite);
+    -webkit-text-stroke: 1px white;
     width: 0%;
     height: 100%;
     color: var(--cwhite);
@@ -260,7 +276,7 @@
 }
 .intro-name svg text{
     font-size: 80px;
-    stroke:  var(--cwhite);   /*rgb(9, 9, 34)*/
+    stroke:  white;   /*rgb(9, 9, 34)*/
     stroke-width: 2px;
     font-weight: 600;
     fill: transparent;
@@ -270,7 +286,7 @@
   }
   @keyframes fillName{
       100%{
-          fill: var(--cwhite);
+          fill: white;
       }
   }
   .intro-name h1{
@@ -335,7 +351,9 @@
 
 /* !!!!!!!!!!!!!!!!!!  ABOUT SECTION !!!!!!!!!!!!!!  */ 
 
-
+  .about{
+      background-color: var(--cwhite);
+  }
   .lead-text{
       margin-bottom: 30px;
   }
@@ -388,6 +406,9 @@
       align-items: center;
       margin-bottom: 10px;
   }
+  .details-caption-list div ul li span{
+      color: var(--textBlack);
+  }
   .details-caption-list div ul li i{
       color: var(--lightBlue);
       font-size: 14px;
@@ -412,6 +433,7 @@
     font-size: 17px;
     font-weight: 600;
     transition: all 500ms ease-in ;
+    color: var(--textBlack);
   }
   .skill-list div:nth-child(2) :first-child li:nth-child(2){
       position: relative;
@@ -450,11 +472,14 @@
 
   /*_____---------_____---RESUME SECTION _______-----RESUME SECTION--_____---*/
 
-
+  .resume{
+      background-color: var(--cwhite);
+  }
   .summary-heading h1{
       font-size: 28px;
       font-weight: 600;
       margin-bottom: 15px;
+      color: var(--textBlack);
   }
   .summary-details{
       padding-left: 24px;
@@ -470,7 +495,7 @@
       width: 16px;
       height: 16px;
       border-radius: 50%;
-      background-color: white;
+      background-color: var(--cwhite);
       border: 2px solid var(--headingDarkBlue);
   }
   .summary-details::after{
@@ -482,11 +507,15 @@
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background-color: white;
+    background-color: var(--cwhite);
     border: 2px solid var(--headingDarkBlue);
 }
   .summary-details h6{
       font-weight: 600;
+      color: var(--textBlack);
+  }
+  .summary-details h5{
+      color: var(--textBlack);
   }
   .summary-details p{
       font-style: italic;
@@ -499,6 +528,7 @@
   .summary-details ul li{
       list-style-type: disc;
       margin-bottom: 10px;
+      color: var(--textBlack);
   }
   .summary-circle{
       width: 16px;
@@ -534,7 +564,7 @@
         }
         .portfolio-slider{
             margin-top: 50px;
-            background-color: rgba(228,237,249,0.4);
+            background-color: var(--portfolioSlider);
             padding: 40px 40px;
             border-radius: 8px;
         }
@@ -604,7 +634,9 @@
         
 
 /*_________--SERVICE SECTION ____------ SERVICE SECTION ___---- SERVICE SECTION --*/
-
+        .service{
+            background-color: var(--cwhite);
+        }
         .service-detail-inner{
             display: flex;
             position: relative;
@@ -674,6 +706,7 @@
             font-size: 17px;
             margin-bottom: 0;
             transition: all 600ms ease;
+            color: var(--textBlack);
         }
 
 
@@ -684,7 +717,7 @@
             background-color: var(--bglight);
         }
         .review-slider-inner-caption{
-            background-color: white;
+            background-color: var(--reviewSlider);
             box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
             padding: 20px;
             border-radius: 4px;
@@ -701,7 +734,7 @@
             height: 0;
             border-left: 13px solid transparent;
             border-right: 13px solid transparent;
-            border-top: 13px solid white;
+            border-top: 13px solid var(--reviewSlider);
         }
         .review-slider-inner-caption i{
             margin-right: 10px;
@@ -715,6 +748,7 @@
         .review-slider-inner-caption span{
             font-style: italic;
             font-size: 17px;
+            color: var(--textBlack);
         }
 
         .review-slider-inner-customer img{
@@ -956,6 +990,31 @@
     .service-detail-caption p{
         font-size: 16px;
     }
+
+/*REVIEW SECTION ____-----REVIEW------__REVIEW___---REVIEW SECTION--REVIEW*/
+
+    .review-slider-inner-caption span{
+        font-style: italic;
+        font-size: 15px;
+    }
+    .review-slider-inner-caption i{
+        margin-right: 10px;
+        font-size: 20px !important;
+    }
+    .review-slider-inner-caption i:last-child{
+        margin-left: 10px;
+    }
+
+    .review-slider-inner-customer img{
+        margin: 18px auto;
+        width: 80px !important;
+    }
+    .review-slider-inner-customer h5{
+        font-size: 16px;
+    }
+    .review-slider-inner-customer h6{
+        font-size: 14px;
+    }
     
 
 
@@ -1078,6 +1137,8 @@
     .service-detail-caption p{
         font-size: 16px;
     }
+
+    
     
 
 }
@@ -1399,6 +1460,33 @@
         .service-detail-caption p{
             font-size: 15px;
         }
+
+        /*REVIEW SECTION ____-----REVIEW------__REVIEW___---REVIEW SECTION--REVIEW*/
+
+        .review-slider-inner-caption span{
+            font-style: italic;
+            font-size: 15px;
+        }
+        .review-slider-inner-caption i{
+            margin-right: 10px;
+            font-size: 18px !important;
+        }
+        .review-slider-inner-caption i:last-child{
+            margin-left: 10px;
+        }
+
+        .review-slider-inner-customer img{
+            margin: 18px auto;
+            width: 80px !important;
+        }
+        .review-slider-inner-customer h5{
+            font-size: 16px;
+        }
+        .review-slider-inner-customer h6{
+            font-size: 14px;
+        }
+    
+
 
 }
 

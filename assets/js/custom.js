@@ -110,6 +110,14 @@ $('a[href*="#"]')
 .not('[href="#"]')
 .not('[href="#0"]')
 .click(function(event) {
+  //
+  if(screenWidth<992)
+  {
+    toggleHeaderAnime();
+    blackOverlay.classList.toggle('d-none');
+    headerBtn.style.display='block';
+  }
+  //
   // On-page links
   if (
     location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
@@ -181,11 +189,50 @@ $('.review-owl').owlCarousel({
       0:{
           items:1
       },
-      600:{
-          items:3
+      768:{
+          items:2
       },
-      1000:{
+      1200:{
           items:3
       }
   }
+})
+
+
+
+//dark theme
+/*
+document.documentElement.style.setProperty('--cwhite', '#040b14');
+document.documentElement.style.setProperty('--bglight', 'black');
+document.documentElement.style.setProperty('--textBlack', 'white');
+document.documentElement.style.setProperty('--reviewSlider', '#040b14');
+document.documentElement.style.setProperty('--portfolioSlider', '#040b14');
+*/
+//theme switch
+
+var theme = document.querySelector('#theme');
+var themeSwitch =document.querySelector('#theme-switch');
+
+theme.addEventListener('click',function(){
+  themeSwitch.classList.toggle('fa-toggle-on');
+  themeSwitch.classList.toggle('fa-toggle-off');
+  //changed switched icon
+
+  //change colors
+  if(getComputedStyle(document.documentElement).getPropertyValue('--reviewSlider')!="#040b14"){
+    console.log('switching colors')
+    document.documentElement.style.setProperty('--cwhite', '#040b14');
+    document.documentElement.style.setProperty('--bglight', 'black');
+    document.documentElement.style.setProperty('--textBlack', 'white');
+    document.documentElement.style.setProperty('--reviewSlider', '#040b14');
+    document.documentElement.style.setProperty('--portfolioSlider', '#040b14');
+  }
+  else{
+    document.documentElement.style.setProperty('--cwhite', 'white');
+    document.documentElement.style.setProperty('--bglight', '#f5f8fd');
+    document.documentElement.style.setProperty('--textBlack', '#272829');
+    document.documentElement.style.setProperty('--reviewSlider', 'white');
+    document.documentElement.style.setProperty('--portfolioSlider', 'rgba(228,237,249,0.4)');
+  }
+  
 })
