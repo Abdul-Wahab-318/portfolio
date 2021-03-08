@@ -677,7 +677,82 @@
         }
 
 
-/*MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIAMEDIA MEDIA MEDIA MEDIAMEDIA MEDIA MEDIA MEDIAMEDIA MEDIA MEDIA  MEDIA MEDIA MEDIA*/
+
+/*REVIEW SECTION ____-----REVIEW------__REVIEW___---REVIEW SECTION--REVIEW*/
+
+        .review{
+            background-color: var(--bglight);
+        }
+        .review-slider-inner-caption{
+            background-color: white;
+            box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+            padding: 20px;
+            border-radius: 4px;
+            position: relative;
+        }
+        .review-slider-inner-caption::after{
+            display: block;
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 0%;
+            transform: translate(-50%,100%);
+            width: 0;
+            height: 0;
+            border-left: 13px solid transparent;
+            border-right: 13px solid transparent;
+            border-top: 13px solid white;
+        }
+        .review-slider-inner-caption i{
+            margin-right: 10px;
+            font-size: 25px !important;
+            color: #c3e8fa;
+        }
+        .review-slider-inner-caption i:last-child{
+            margin-right: unset;
+            margin-left: 10px;
+        }
+        .review-slider-inner-caption span{
+            font-style: italic;
+            font-size: 17px;
+        }
+
+        .review-slider-inner-customer img{
+            margin: 18px auto;
+            width: 90px !important;
+            border-radius: 50%;
+        }
+        .review-slider-inner-customer h5{
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: #111;
+            color: var(--textBlack);
+        }
+        .review-slider-inner-customer h6{
+            text-align: center;
+            font-size: 14px;
+            color: #999999;
+        }
+        .review-owl .owl-dots .active span{
+            background-color: var(--lightBlue) !important;
+        }
+        .review-owl .owl-dots button{
+            outline: none;
+        }
+    
+
+
+
+
+
+
+
+
+
+
+
+/*MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA  MEDIA MEDIA MEDIA*/
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
