@@ -192,7 +192,8 @@ theme.addEventListener('click',function(){
 
 
 // FORM VALIDATION ____----- FORM VALIDATION ---- -___ FORM
-function validateForm(){
+
+function validateForm(event){
   var fName= document.querySelector('#fName');
   var lName= document.querySelector('#lName');
   var mobile= document.querySelector('#mobile');
@@ -230,15 +231,11 @@ function validateForm(){
     console.log('clearing all');
     clearAll();
   }
-}
-/*
-function clearError()
-{
-  for(var i=0; i<5 ; i++)
-  {
-    document.getElementsByClassName('error')[i].classList.remove("full-opacity");
+  else{
+    event.preventDefault();
+    event.stopPropogation();
   }
-}*/
+}
 
 function clearError(e){
   e.nextElementSibling.classList.remove('full-opacity')
