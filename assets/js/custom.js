@@ -233,7 +233,6 @@ function validateForm(event){
   }
   else{
     event.preventDefault();
-    event.stopPropogation();
   }
 }
 
