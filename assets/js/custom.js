@@ -198,10 +198,12 @@ function validateForm(){
   var mobile= document.querySelector('#mobile');
   var email= document.querySelector('#email');
   var message= document.querySelector('#message');
+  var contactForm=document.querySelector('#contactForm');
   var king=0;
   if(fName.value.length<=3){
     console.log('small fName')
     document.getElementsByClassName('error')[0].classList.add("full-opacity");
+    contactForm.event.preventDefault();
     king++;
   }
   if(lName.value.length<=3){
