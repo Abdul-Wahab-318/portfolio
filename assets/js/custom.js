@@ -229,10 +229,10 @@ function validateForm(event){
   if(king==0)
   {
     console.log('clearing all');
-    clearAll();
+    //clearAll();
   }
   else{
-    event.preventDefault();
+    //event.preventDefault();
   }
 }
 
