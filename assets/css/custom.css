@@ -885,7 +885,7 @@
             color: var(--textBlack);
         }
         .message-form-inner form  .row:nth-child(2){
-            margin-top: 15px;
+            margin-top: 25px;
         }
         .message-form-inner button{
             margin-top: 15px;
