@@ -203,7 +203,7 @@ function validateForm(){
   if(fName.value.length<=3){
     console.log('small fName')
     document.getElementsByClassName('error')[0].classList.add("full-opacity");
-    contactForm.event.preventDefault();
+    contactForm.preventDefault();
     king++;
   }
   if(lName.value.length<=3){
