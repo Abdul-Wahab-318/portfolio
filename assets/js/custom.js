@@ -6,7 +6,6 @@ var blackOverlay=document.getElementById('blackOverlay');
 var header=document.getElementById('header');
 const headerBtn=document.getElementById('headerBtn');
 const crossHeader=document.getElementById('crossHeader');
-const kingCrimson=document.querySelector('#kingCrimson');
 //
 
 profile.addEventListener('click',function(){
@@ -60,9 +59,6 @@ function toggleHeaderAnime()
   {
       console.log('yeet')
       toggleHeaderAnime();
-     /* header.addEventListener('animationend',function(){
-        header.style.opacity="1";
-      })*/
   } // when screen size is below 992px then hide header 
 
 
@@ -76,13 +72,7 @@ function toggleHeaderAnime()
               
   })
 
-  //play kingCrimson Sound Effect
 
-  function playAudio()
-  {
-    kingCrimson.play();
-    kingCrimson.volume=0.2;
-  }
 
 //jquery
 // Select all links with hashes
@@ -199,3 +189,68 @@ theme.addEventListener('click',function(){
     document.documentElement.style.setProperty('--portfolioSlider', 'rgba(228,237,249,0.4)');
   }
 })
+
+
+// FORM VALIDATION ____----- FORM VALIDATION ---- -___ FORM
+function validateForm(){
+  var fName= document.querySelector('#fName');
+  var lName= document.querySelector('#lName');
+  var mobile= document.querySelector('#mobile');
+  var email= document.querySelector('#email');
+  var message= document.querySelector('#message');
+  var king=0;
+  if(fName.value.length<=3){
+    console.log('small fName')
+    document.getElementsByClassName('error')[0].classList.add("full-opacity");
+    king++;
+  }
+  if(lName.value.length<=3){
+    console.log('small LName')
+    document.getElementsByClassName('error')[1].classList.add("full-opacity");
+    king++;
+  }
+  if(email.value.length<=8){
+    console.log('small email')
+    document.getElementsByClassName('error')[2].classList.add("full-opacity");
+    king++;
+  }
+  if(mobile.value.length<=10){
+    console.log('small mobile')
+    document.getElementsByClassName('error')[3].classList.add("full-opacity");
+    king++;
+  }
+  if(message.value.length<=2){
+    console.log('small mobile')
+    document.getElementsByClassName('error')[4].classList.add("full-opacity");
+    king++;
+  }
+  if(king==0)
+  {
+    console.log('clearing all');
+    clearAll();
+  }
+}
+/*
+function clearError()
+{
+  for(var i=0; i<5 ; i++)
+  {
+    document.getElementsByClassName('error')[i].classList.remove("full-opacity");
+  }
+}*/
+
+function clearError(e){
+  e.nextElementSibling.classList.remove('full-opacity')
+}
+function clearAll()
+{
+  for(var i=0; i<5 ; i++)
+  {
+    document.getElementsByClassName('error')[i].classList.remove("full-opacity");
+    fName.value="";
+    lName.value="";
+    mobile.value="";
+    email.value="";
+    message.value="";
+  }
+}

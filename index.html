@@ -127,9 +127,7 @@
                         </div>
                     </div>
                 </section>
-                <audio id="kingCrimson" class="d-none">
-                    <source src="./assets/img/kingCrimson.mp3" type="audio/ogg"> 
-                </audio>
+
                 <section class="fact section-padding-y d-none" id="fact">
                     <div class="container">
                         <div class="fact-inner">
@@ -363,29 +361,34 @@
                                     <div class=" message-form">
                                         <div class="message-form-inner">
                                             <h1>Send a Message</h1>
-                                            <form action="">
+                                            <form action="" name="contact" onsubmit="event.preventDefault()" data-netlify="true">
                                                 <div class="row">
                                                     <div class="col-6">
-                                                        <input type="text" name="" id="" placeholder="First Name">
+                                                        <input onfocus="clearError(this)" id="fName" type="text" name="firstName"  placeholder="First Name">
+                                                        <div class="error" >Enter Atleast 3 Characters</div>
                                                     </div>
                                                     <div class="col-6">
-                                                        <input type="text" name="" id="" placeholder="Last Name">
+                                                        <input onfocus="clearError(this)" id="lName" type="text" name="lastName"  placeholder="Last Name">
+                                                        <div class="error">Enter Atleast 3 Characters</div>
                                                     </div>
                                                 </div>
                                                 <div class="row ">
                                                     <div class="col-6">
-                                                        <input type="email" name="" id="" placeholder="Email Address">
+                                                        <input onfocus="clearError(this)" id="email" type="email" name="email" placeholder="Email Address">
+                                                        <div class="error">Enter A Valid Email</div>
                                                     </div>
                                                     <div class="col-6">
-                                                        <input type="text" name="" id="" placeholder="Mobile Number">
+                                                        <input onfocus="clearError(this)" id="mobile" type="text" name="mobile"  placeholder="Mobile Number">
+                                                        <div class="error">Enter Atleast 10 digits</div>
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-12">
-                                                        <textarea name="" id="" cols="30" rows="5" placeholder="Write your message here..."></textarea>
+                                                        <textarea onfocus="clearError(this)" id="message" name="message" cols="30" rows="5" placeholder="Write your message here..."></textarea>
+                                                        <div class="error">Write something</div>
                                                     </div>
                                                 </div>
-                                                <button>Send</button>
+                                                <button id="formBtn" type="submit" onclick="validateForm()">Send</button>
                                             </form>
                                         </div>
                                         <div class="contact-info">

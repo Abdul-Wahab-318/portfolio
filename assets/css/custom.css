@@ -854,12 +854,26 @@
             padding-bottom: 8px;
             color: var(--textBlack);
         }
+        .red-placeholder{
+            color: red;
+        }
+        .error{
+            color: red;
+            font-size: 12px;
+            opacity: 0;
+        }
+        .full-opacity{
+            opacity: 1  ;
+        }
+        .no-opacity{
+            opacity: 0;
+        }
         .message-form-inner input::placeholder{
             color: var(--textBlack);
         }
         .message-form-inner textarea{
             width: 100%;
-            margin-top: 50px;
+            margin-top: 30px;
             border: 0;
             background-color: transparent;
             font-size: 17px;
@@ -871,10 +885,10 @@
             color: var(--textBlack);
         }
         .message-form-inner form  .row:nth-child(2){
-            margin-top: 30px;
+            margin-top: 15px;
         }
         .message-form-inner button{
-            margin-top: 30px;
+            margin-top: 15px;
             background-color: var(--headingDarkBlue);
             width: 150px;
             padding: 14px 0;
@@ -1813,6 +1827,9 @@
             font-size: 15px;
             display: block;
             margin: 30px auto;
+        }
+        .error{
+            font-size: 10px;
         }
 
         
