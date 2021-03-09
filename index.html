@@ -361,7 +361,7 @@
                                     <div class=" message-form">
                                         <div class="message-form-inner">
                                             <h1>Send a Message</h1>
-                                            <form action="POST" name="contact" onsubmit="event.preventDefault()" data-netlify="true">
+                                            <form action="POST" name="contact" onsubmit="" data-netlify="true">
                                                 <div class="row">
                                                     <div class="col-6">
                                                         <input onfocus="clearError(this)" id="fName" type="text" name="firstName"  placeholder="First Name">
@@ -388,7 +388,7 @@
                                                         <div class="error">Write something</div>
                                                     </div>
                                                 </div>
-                                                <button id="formBtn" type="submit" onclick="validateForm()">Send</button>
+                                                <button id="formBtn" type="submit" onsubmit="validateForm()">Send</button>
                                             </form>
                                         </div>
                                         <div class="contact-info">
