@@ -888,7 +888,7 @@
             margin-top: 25px;
         }
         .message-form-inner form  .row:nth-child(3){
-            margin-top: 15px;
+            margin-top: 0px;
         }
         .message-form-inner button{
             margin-top: 15px;
@@ -1189,7 +1189,7 @@
     }
     .message-form-inner textarea{
         width: 100%;
-        margin-top: 50px;
+        margin-top: 30px;
         font-size: 15px;
     }
     .message-form-inner form  .row:nth-child(2){
@@ -1373,7 +1373,7 @@
     }
     .message-form-inner textarea{
         width: 100%;
-        margin-top: 50px;
+        margin-top: 30px;
         font-size: 15px;
     }
     .message-form-inner form  .row:nth-child(2){
@@ -1819,7 +1819,7 @@
         }
         .message-form-inner textarea{
             width: 100%;
-            margin-top: 50px;
+            margin-top: 30px;
             font-size: 15px;
         }
         .message-form-inner form  .row:nth-child(2){
