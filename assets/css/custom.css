@@ -1552,8 +1552,9 @@
     }
     .intro-name svg text{
         font-size: 110px;
-       
+        animation: animateBigName 3s ease,fillName 800ms ease-in 3s forwards;
       }
+      
     .intro-name h1{
         font-weight: 300;
         font-size: 18px;
