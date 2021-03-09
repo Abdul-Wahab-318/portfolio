@@ -232,7 +232,7 @@ function validateForm(event){
     //clearAll();
   }
   else{
-    //event.preventDefault();
+    event.preventDefault();
   }
 }
 
