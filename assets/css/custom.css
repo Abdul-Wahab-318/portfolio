@@ -640,7 +640,7 @@
         .service-detail-inner{
             display: flex;
             position: relative;
-            z-index: 10;
+            z-index: 3;
             padding: 20px;
         }
         .service-detail-inner:hover::before{
@@ -902,7 +902,25 @@
         }
 
 
-
+        .scrollTop-Btn{
+            display: none;
+            width: 50px;
+            height: 50px;
+            background-color: #149ddd;
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+            border: 0;
+            outline: none !important;
+            border-radius: 50%;
+            z-index: 5;
+        }
+        .scrollTop-Btn i::before{
+            font-size: 20px;
+            color: white;
+            display: block;
+            transform: rotate(-90deg);
+        }
 
 
 
@@ -920,6 +938,16 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .scrollTop-Btn{
+        width: 40px;
+        height: 40px;
+        bottom: 15px;
+        right: 15px;
+    }
+    .scrollTop-Btn i::before{
+        font-size: 18px;
+    }
     .header-toggle-btn{
         display: none;
     }
@@ -1208,6 +1236,17 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) { 
+
+
+    .scrollTop-Btn{
+        width: 40px;
+        height: 40px;
+        bottom: 15px;
+        right: 15px;
+    }
+    .scrollTop-Btn i::before{
+        font-size: 18px;
+    }
     .header{
         opacity: 0;
     }
@@ -1391,6 +1430,16 @@
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) { 
+
+    .scrollTop-Btn{
+        width: 40px;
+        height: 40px;
+        bottom: 15px;
+        right: 15px;
+    }
+    .scrollTop-Btn i::before{
+        font-size: 18px;
+    }
     .header{
         opacity: 0;
     }
@@ -1531,6 +1580,7 @@
     }
     .message-form{
         margin:  100% auto ;
+        margin-bottom: 0;
         width: 100%;
         padding:  0 15px;
         position: relative;
@@ -1544,6 +1594,16 @@
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) { 
+
+    .scrollTop-Btn{
+        width: 40px;
+        height: 40px;
+        bottom: 15px;
+        right: 15px;
+    }
+    .scrollTop-Btn i::before{
+        font-size: 16px;
+    }
     .header{
         opacity: 0;
     }

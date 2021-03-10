@@ -251,3 +251,15 @@ function clearAll()
     message.value="";
   }
 }
+window.onscroll = function() {scrollTop()}
+//scroll to top btn
+function scrollTop()
+{
+  if(document.body.scrollTop>70 || document.documentElement.scrollTop > 70)
+  {
+    document.querySelector('#scrollBtn').style.display='block';
+  }
+  else{
+    document.querySelector('#scrollBtn').style.display='none';
+  }
+}
