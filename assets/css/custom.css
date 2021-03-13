@@ -243,7 +243,7 @@
 }
 
 .remove-header-anime{
-    animation: removeHeader 800ms  forwards;
+    animation: removeHeader 400ms ease-out  forwards;
 }
 @keyframes removeHeader{
     100%{
@@ -251,12 +251,15 @@
     }
 }
 @keyframes addHeader{
+    0%{
+        transform: translateX(-100%);
+    }
     100%{
         transform: translateX(0%);
     }
 }
 .show-header-anime{
-    animation: addHeader 800ms ease-in forwards;
+    animation: addHeader 500ms  forwards;
 }
 
 
