@@ -57,9 +57,18 @@ function toggleHeaderAnime()
   var screenWidth= screen.width;
   if(screenWidth<992)
   {
-      console.log('yeet')
+      console.log('<992px')
       toggleHeaderAnime();
   } // when screen size is below 992px then hide header 
+
+  if(screenWidth>992)
+  {
+      console.log('> 992px')
+      //toggleHeaderAnime();
+
+  } // when screen size is above 992px then hide header 
+
+
 
 
   const h1=document.querySelector('#animatingInfo');

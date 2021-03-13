@@ -937,11 +937,17 @@
     .header-toggle-btn{
         display: none;
     }
+    .show-header-anime{
+        animation: unset;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
 
+    .show-header-anime{
+        animation: unset;
+    }
     .scrollTop-Btn{
         width: 40px;
         height: 40px;
