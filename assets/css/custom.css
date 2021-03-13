@@ -44,7 +44,7 @@
     z-index: 9;
 }
 .theme{
-    cursor: pointer;
+    cursor: pointer ;
     color: white;
     position: absolute;
     top: 20px;
@@ -53,8 +53,31 @@
 }
 .theme i{
     margin-right: 5px;
+    font-size: 12px;
 }
-
+.rotateSwitch{
+    animation: rotateSwitch 300ms forwards;
+}
+@keyframes rotateSwitch{
+    100%{
+        transform: rotate(180deg);
+    }
+}
+.unrotateSwitch{
+    animation: unrotateSwitch 300ms forwards;
+}
+@keyframes unrotateSwitch{
+    0%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.theme li{
+    display: flex;
+    align-items: center;
+}
 .section-padding-y{
     padding: 60px 0px;
 }
@@ -909,6 +932,8 @@
 
         .scrollTop-Btn{
             display: none;
+            justify-content: center;
+            align-items: center;
             width: 50px;
             height: 50px;
             background-color: #149ddd;
@@ -919,12 +944,20 @@
             outline: none !important;
             border-radius: 50%;
             z-index: 5;
+            cursor: pointer;
         }
-        .scrollTop-Btn i::before{
-            font-size: 20px;
+        .scrollTop-Btn i{
+            font-size: 19px;
             color: white;
             display: block;
             transform: rotate(-90deg);
+            cursor: pointer;
+        }
+        .scrollTop-Btn i::before{
+            font-size: 19px;
+            color: white;
+            display: block;
+            cursor: pointer;
         }
 
 

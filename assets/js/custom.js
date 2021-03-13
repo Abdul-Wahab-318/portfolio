@@ -141,8 +141,8 @@ $('.portfolio-owl').owlCarousel({
   autoplay:true,
   autoplayTimeout:4000,
   navText:[
-    '<i class="fas fa-chevron-left"></i>',
-    '<i class="fas fa-chevron-right"></i>'
+    '<i class="fas icon-fa-chevron-left"></i>',
+    '<i class="fas icon-fa-chevron-right"></i>'
   ],
   responsive:{
       0:{
@@ -178,8 +178,10 @@ $('.review-owl').owlCarousel({
 var theme = document.querySelector('#theme');
 var themeSwitch =document.querySelector('#theme-switch');
 theme.addEventListener('click',function(){
-  themeSwitch.classList.toggle('fa-toggle-on');
-  themeSwitch.classList.toggle('fa-toggle-off');
+  //themeSwitch.classList.toggle('icon-fa-toggle-on');
+  //themeSwitch.classList.toggle('icon-fa-toggle-off');
+  themeSwitch.classList.toggle('rotateSwitch');
+  themeSwitch.classList.toggle('unrotateSwitch');
   //changed switched icon
   //change colors
   if(getComputedStyle(document.documentElement).getPropertyValue('--reviewSlider')!="#040b14"){
@@ -266,7 +268,7 @@ function scrollTop()
 {
   if(document.body.scrollTop>70 || document.documentElement.scrollTop > 70)
   {
-    document.querySelector('#scrollBtn').style.display='block';
+    document.querySelector('#scrollBtn').style.display='flex';
   }
   else{
     document.querySelector('#scrollBtn').style.display='none';
