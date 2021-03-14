@@ -519,18 +519,17 @@
       transform: translateY(-50%);
       opacity: 0;
   }
-  .skill-list-inner ul li i{
+  
+  .skill-list-inner ul li span i{
       transition: all 500ms ease-in;
-      transition-delay: 50ms;
+      display: inline-block;
   }
-  .skill-list-inner ul li:hover i{
+  .skill-list-inner ul li:hover span i{
     transform: rotate(360deg);
     color: var(--lightBlue);
-    
   }
   .skill-list-inner ul li:hover {
-      color: var(--lightBlue);
-      
+      color: var(--lightBlue); 
   }
 
 
@@ -657,6 +656,9 @@
         .portfolio-slider .portfolio-owl .item .item-inner .item-link i{
             font-size: 20px;
             color: var(--lightBlue);
+        }
+        .portfolio-slider .portfolio-owl .item .item-inner .item-link a:hover{
+            text-decoration: none;;
         }
         .portfolio-slider .portfolio-owl .owl-item{
             padding: 0 180px;
