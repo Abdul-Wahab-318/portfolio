@@ -43,6 +43,43 @@
     right: 0;
     z-index: 9;
 }
+.loader-parent{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: var(--primaryDarkBlue);
+    opacity: 1;
+    transition: 500ms all ease-out;
+}
+.loader{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) ;
+}
+.loader-inner{
+    
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid white;border-top: 2px dotted var(--lightBlue);
+    animation: orbitCircle 1200ms linear infinite ;
+}
+@keyframes orbitCircle{
+    0%{
+        transform: rotate(0deg) ;
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg) ;
+    }
+}
 .theme{
     cursor: pointer ;
     color: white;
@@ -979,6 +1016,7 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+
 
     .show-header-anime{
         animation: unset;

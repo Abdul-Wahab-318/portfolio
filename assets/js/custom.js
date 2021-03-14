@@ -274,3 +274,17 @@ function scrollTop()
     document.querySelector('#scrollBtn').style.display='none';
   }
 }
+
+window.onload = function(){
+  console.log('loaded');
+  var loader=document.querySelector('#loader');
+  loader.style.opacity='0';
+  loader.style.zIndex='-100';
+  if(loader.firstElementChild.firstElementChild.style.animationIterationCount==5)
+  {
+    loader.firstElementChild.firstElementChild.style.animation='unset'
+  }
+
+  
+
+}
