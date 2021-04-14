@@ -19,7 +19,7 @@
     --bglight:#f5f8fd;
     --reviewSlider:white;
     --portfolioSlider:rgba(228,237,249,0.4);
-    
+    scroll-behavior: smooth;
 }
 
 .header{
