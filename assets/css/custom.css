@@ -32,14 +32,14 @@
     padding:  0 15px;
     background-color: var(--primaryDarkBlue);
     overflow-x: hidden; 
-    /*overflow-y: auto; */
+    overflow-y: auto; 
     height: 150%;
 }
 .black-overlay{
     background-color: rgb(0, 0, 0,0.5);
     position: fixed;
     top: 0;
-    bottom: 0;
+    bottom: -200px;
     left: 0;
     right: 0;
     z-index: 9;
