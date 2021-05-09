@@ -33,6 +33,7 @@
     background-color: var(--primaryDarkBlue);
     overflow-x: hidden; 
     /*overflow-y: auto; */
+    height: 100%;
 }
 .black-overlay{
     background-color: rgb(0, 0, 0,0.5);
