@@ -10,7 +10,7 @@ const crossHeader=document.getElementById('crossHeader');
 
 profile.addEventListener('click',function(){
     profile.firstElementChild.classList.toggle('profileAnimationClass')
-})
+} ,{passive: true});
 
 //remove animation from all social links when animation ends
 social.addEventListener('animationend', function(){
@@ -20,7 +20,7 @@ social.addEventListener('animationend', function(){
     {
         allLinks[i].classList.remove('default-icon-anime');
     }
-})
+} ,{passive: true})
 
 /* generic functions */
 function toggleHeaderAnime()
@@ -37,7 +37,7 @@ function toggleHeaderAnime()
       {
           headerBtn.style.display='none';
       }
-  }) // when hamburger is clicked
+  } ,{passive: true}) // when hamburger is clicked
 
   
 
@@ -45,13 +45,13 @@ function toggleHeaderAnime()
       toggleHeaderAnime();
       headerBtn.style.display='block';
       blackOverlay.classList.toggle('d-none');
-  }) // when cross is pressed on extra small screens
+  },{passive: true}) // when cross is pressed on extra small screens
 
   blackOverlay.addEventListener('click',function(){
     toggleHeaderAnime();
     headerBtn.style.display='block';
     blackOverlay.classList.toggle('d-none');
-  }) // when black overlay is clicked
+  },{passive: true}) // when black overlay is clicked
 
 
   var screenWidth= screen.width;
@@ -79,7 +79,7 @@ function toggleHeaderAnime()
   h1.innerHTML="WEB DEVELOPER ...";
   h1.setAttribute('data-text','WEB DEVELOPER ...');
               
-  })
+  } ,{passive: true})
 
 
 
@@ -199,7 +199,7 @@ theme.addEventListener('click',function(){
     document.documentElement.style.setProperty('--reviewSlider', 'white');
     document.documentElement.style.setProperty('--portfolioSlider', 'rgba(228,237,249,0.4)');
   }
-})
+} ,{passive: true})
 
 
 // FORM VALIDATION ____----- FORM VALIDATION ---- -___ FORM
