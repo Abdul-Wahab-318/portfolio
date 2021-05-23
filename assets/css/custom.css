@@ -342,13 +342,16 @@
 }
 .intro-name svg text{
     font-size: 80px;
-    stroke:  white;   /*rgb(9, 9, 34)*/
+    stroke:  white;   
     stroke-width: 2px;
     font-weight: 600;
     fill: transparent;
-    animation: animateBigName 5s ease,fillName 800ms ease-in 4s forwards;
+    /*animation: animateBigName 5s ease,fillName 800ms ease-in 4s forwards;*/
     position: relative;
    
+  }
+  .animateBigName{
+    animation: animateBigName 5s ease,fillName 800ms ease-in 4s forwards;
   }
   @keyframes fillName{
       100%{
