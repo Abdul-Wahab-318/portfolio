@@ -345,7 +345,6 @@
     stroke:  white;   
     stroke-width: 2px;
     font-weight: 600;
-    fill: transparent;
     stroke-dasharray: 0% 50%;
     /*animation: animateBigName 5s ease,fillName 800ms ease-in 4s forwards;*/
     position: relative;

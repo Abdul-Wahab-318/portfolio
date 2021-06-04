@@ -277,12 +277,6 @@ function scrollTop()
 
 window.onload = function(){
 
-  //ADDS ANIMATION TO INTRO SECTION ON LOAD
-  var introText = document.querySelector('#introText')
-  introText.classList.add("animateBigName")
-
-
-
   var loader=document.querySelector('#loader');
   loader.style.opacity='0';
   loader.style.zIndex='-100';
@@ -291,6 +285,9 @@ window.onload = function(){
     loader.firstElementChild.firstElementChild.style.animation='unset'
   }
 
+  //ADDS ANIMATION TO INTRO SECTION ON LOAD
+  var introText = document.querySelector('#introText')
+  introText.classList.add("animateBigName")
   
 
 }
