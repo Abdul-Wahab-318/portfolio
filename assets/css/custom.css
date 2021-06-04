@@ -754,6 +754,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            width: 120px;
+            height: 120px;
             padding: 30px;
             border-radius: 50%;
             background-color: var(--lightBlue);
@@ -764,6 +766,9 @@
         .service-detail-icon i{
             font-size: 40px;
             transition: all 600ms ease;
+        }
+        .service-detail-caption{
+            width: 80%;
         }
         .service-detail-caption h6{
             font-size: 22px;
@@ -1002,10 +1007,230 @@
             display: block;
             cursor: pointer;
         }
+        .mb-20{
+            margin: 0 0 20px 0;
+        }
+        .portfolio-shuffle-inner .row .shuffle-card{
+            padding: 0 10px;
+        }
+        .filters-group {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+        .filters-group .btn-group{
+            background-color: white;
+            padding: 4px 20px;
+            border-radius: 20px;
+        }
+        .filters-group .btn-group button{
+            padding: 5px 12px;
+            font-weight: 600;
+            box-shadow: unset !important;
+        }
+        .filters-group .btn-group button:hover,:focus{
+            color: var(--lightBlue);
+        }
 
+        .shuffle-card-img{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            position: relative;
+        }
+        .shuffle-card-img:hover .shuffle-card-caption{
+            opacity: 1;
+        }
+        .shuffle-card-caption{
+            position: absolute;
+            bottom: 0;
+            opacity: 0;
+            box-sizing: border-box;
+            width: 100%;
+            padding: 20px 0;
+            background-color: rgba(20,157,221,0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none !important;
+            transition: all 300ms;
+        }
+        .shuffle-card-img{
+            height: 215px;
+            overflow: hidden;
+            border-radius: 6px 6px 6px 6px;
+            background-color: #fff1e2;
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* background-position: center;*/
+        }
+        .shuffle-card-img img{
+            border-radius: 6px 6px 6px 6px;
+        }
+        .shuffle-card-caption:hover{
+            background-color: rgba(20,157,221,0.8);
+        }
+        .shuffle-card-caption i{
+            color: white;
+            font-size: 20px;
+        }
+        .my-shuffle-container {
+            position: relative;
+            overflow: hidden;
+          }
+          
+          .my-sizer-element {
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+          }
 
-
-
+          .col-1\@xs,
+          .col-2\@xs,
+          .col-3\@xs,
+          .col-4\@xs,
+          .col-5\@xs,
+          .col-6\@xs,
+          .col-1\@sm,
+          .col-2\@sm,
+          .col-3\@sm,
+          .col-4\@sm,
+          .col-5\@sm,
+          .col-6\@sm,
+          .col-7\@sm,
+          .col-8\@sm,
+          .col-9\@sm,
+          .col-10\@sm,
+          .col-11\@sm,
+          .col-12\@sm,
+          .col-1\@md,
+          .col-2\@md,
+          .col-3\@md,
+          .col-4\@md,
+          .col-5\@md,
+          .col-6\@md,
+          .col-7\@md,
+          .col-8\@md,
+          .col-9\@md,
+          .col-10\@md,
+          .col-11\@md,
+          .col-12\@md {
+            position: relative;
+            box-sizing: border-box;
+            min-height: 1px;
+            padding-left: 8px;
+            padding-right: 8px;
+          }
+          
+          .col-1\@xs,
+          .col-2\@xs,
+          .col-3\@xs,
+          .col-4\@xs,
+          .col-5\@xs,
+          .col-6\@xs {
+            float: left;
+          }
+          
+          .col-1\@xs {
+            width: 16.66667%;
+          }
+          
+          .col-2\@xs {
+            width: 33.33333%;
+          }
+          
+          .col-3\@xs {
+            width: 50%;
+          }
+          
+          .col-4\@xs {
+            width: 66.66667%;
+          }
+          
+          .col-5\@xs {
+            width: 83.33333%;
+          }
+          
+          .col-6\@xs {
+            width: 100%;
+          }
+          
+          @media screen and (min-width: 768px) {
+            .col-1\@sm,
+            .col-2\@sm,
+            .col-3\@sm,
+            .col-4\@sm,
+            .col-5\@sm,
+            .col-6\@sm,
+            .col-7\@sm,
+            .col-8\@sm,
+            .col-9\@sm,
+            .col-10\@sm,
+            .col-11\@sm,
+            .col-12\@sm {
+              float: left;
+            }
+          
+            .col-1\@sm {
+              width: 8.33333%;
+            }
+          
+            .col-2\@sm {
+              width: 16.66667%;
+            }
+          
+            .col-3\@sm {
+              width: 25%;
+            }
+          
+            .col-4\@sm {
+              width: 33.33333%;
+            }
+          
+            .col-5\@sm {
+              width: 41.66667%;
+            }
+          
+            .col-6\@sm {
+              width: 50%;
+            }
+          
+            .col-7\@sm {
+              width: 58.33333%;
+            }
+          
+            .col-8\@sm {
+              width: 66.66667%;
+            }
+          
+            .col-9\@sm {
+              width: 75%;
+            }
+          
+            .col-10\@sm {
+              width: 83.33333%;
+            }
+          
+            .col-11\@sm {
+              width: 91.66667%;
+            }
+          
+            .col-12\@sm {
+              width: 100%;
+            }
+          
+            .container {
+              padding-left: 7%;
+              padding-right: 7%;
+            }
+          
+            .row {
+              max-width: 1200px;
+            }
+          }
+          
+        
+          
 
 
 /*MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA  MEDIA MEDIA MEDIA*/
@@ -1804,8 +2029,20 @@
         .resume-summary .row .col-lg-6:nth-child(2){
             margin-top: 30px;
         }
-
-
+        /*PORTFOLIO PORTFOLIO*/
+        .filters-group-wrap{
+            padding: 0;     
+        }
+        .filters-group .btn-group {
+            background-color: white;
+            padding: 4px 5px;
+            border-radius: 20px;
+        }
+        .shuffle-card-caption{
+            opacity: 1;
+            padding: 12px 0
+        }
+        /*
         .portfolio-slider{
             margin-top: 50px;
             padding: 20px 20px;
@@ -1853,7 +2090,7 @@
             transform: unset;
             position: static;
             margin: 0 6px;
-        }
+        }*/
 
 
         /*_________--SERVICE SECTION ____------ SERVICE SECTION ___---- SERVICE SECTION --*/
@@ -1992,3 +2229,24 @@
 
 
 
+/*
+                            <div class="portfolio-slider">
+                                <div class="owl-carousel owl-theme portfolio-owl">
+                                    <div class="item">
+                                        <div class="item-inner">
+                                            <img src="./assets/img/02-port.jpg" alt="">
+                                            <div class="item-link">
+                                                <a href="https://real-estate-awm.netlify.app/" target="_blank" rel="noopener noreferrer"><i class=" icon-foreign"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-inner">
+                                            <img src="./assets/img/01-port.png" alt="">
+                                            <div class="item-link">
+                                                <a href="https://awm-construction.netlify.app/" target="_blank" rel="noopener noreferrer"><i class=" icon-foreign"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>*/

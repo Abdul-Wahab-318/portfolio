@@ -230,25 +230,63 @@
                                 <h1>Portfolio</h1>
                                 <p>I have designed / developed many websites and web applications during professional career. Details some of the projects I have worked on are:</p>
                             </div>
-                            <div class="portfolio-slider">
-                                <div class="owl-carousel owl-theme portfolio-owl">
-                                    <div class="item">
-                                        <div class="item-inner">
-                                            <img src="./assets/img/02-port.jpg" alt="">
-                                            <div class="item-link">
-                                                <a href="https://real-estate-awm.netlify.app/" target="_blank" rel="noopener noreferrer"><i class=" icon-foreign"></i></a>
-                                            </div>
+                            <div class="portfolio-shuffle-parent">  
+                                  <div class="container">
+                                    <div class="row">
+                                      <div class="col-sm-12 filters-group-wrap">
+                                        <div class="filters-group">
+                                          <div class="btn-group filter-options">
+                                            <button class="btn btn--primary" id="all">All</button>
+                                            <button class="btn btn--primary" data-group="website">Websites</button>
+                                            <button class="btn btn--primary" data-group="react">React Apps</button>
+                                          </div>
                                         </div>
+                                      </div>
                                     </div>
-                                    <div class="item">
-                                        <div class="item-inner">
-                                            <img src="./assets/img/01-port.png" alt="">
-                                            <div class="item-link">
-                                                <a href="https://awm-construction.netlify.app/" target="_blank" rel="noopener noreferrer"><i class=" icon-foreign"></i></a>
+                                  </div>
+                                  
+                                  <div class="portfolio-shuffle-inner">
+                                    <div id="grid" class="row m-0 my-shuffle-container d-flex">
+                                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mb-20 shuffle-card shuffle-item shuffle-item__visible picture-item" data-groups='["website"]'>
+                                            <div class="shuffle-card-img" style="background-image: url(./assets/img/restaurant-vp.png);">
+                                                <a class="shuffle-card-caption" href="https://awm-restaurant.netlify.app/">
+                                                    <i class=" icon-foreign" ></i>
+                                                </a>
                                             </div>
+                                          </div>
+                                          <div class="col-xs-12 col-sm-12 col-md-6 mb-20 shuffle-card shuffle-item shuffle-item__visible picture-item" data-groups='["website"]'>
+                                            <div class="shuffle-card-img" style="background-image: url(./assets/img/01-port.png);">
+                                                <a class="shuffle-card-caption" href="https://awm-construction.netlify.app/">
+                                                    <i class=" icon-foreign" ></i>
+                                                </a>
+                                            </div>
+                                          </div>
+                                        <div class="col-xs-12 col-md-6 col-lg-6 col-xl-6 mb-20 shuffle-card shuffle-item shuffle-item__visible picture-item" data-groups='["website"]'>
+                                            <div class="shuffle-card-img" style="background-image: url(./assets/img/02-port.jpg);">
+                                                <a class="shuffle-card-caption" href="https://real-estate-awm.netlify.app/">
+                                                    <i class=" icon-foreign" ></i>
+                                                </a>
+                                            </div>
+                                          </div>
+                                      <div class=" col-xs-12  col-sm-12   col-xl-6 mb-20 shuffle-card shuffle-item shuffle-item__visible picture-item" data-groups='["react"]'>
+                                        <div class="shuffle-card-img" style="background-image: url(./assets/img/cera-vp.png);background-size: cover;">
+                      
+                                            <a class="shuffle-card-caption" href="https://cera.netlify.app/">
+                                                <i class=" icon-foreign" ></i>
+                                            </a>
                                         </div>
+                                      </div>
+                                      <!--<div class="col-6 shuffle-card shuffle-item shuffle-item__visible picture-item" data-groups='["react"]'>
+                                        <div class="shuffle-card-img" style="background-image: url(./assets/img/kfc-transparent.png);background-color: #fff1e2; background-size: 200px;">
+                                            <a class="shuffle-card-caption" href="https://github.com/Abdul-Wahab-318/react-kfc">
+                                                <i class=" icon-foreign" ></i>
+                                            </a>
+                                        </div>
+                                      </div>-->
+                                 
+                                      <div class="col-1@sm col-1@xs my-sizer-element"></div>
                                     </div>
-                                </div>
+                                  </div>
                             </div>
                         </div>
                     </div>
@@ -437,24 +475,14 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
       integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
       crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/shuffle.js"></script>
+    <script src="./node_modules/shufflejs/dist/shuffle.min.js"></script>
     <script src="./assets/js/custom.js"></script>
   </body>
 </html>
