@@ -33,7 +33,7 @@
     background-color: var(--primaryDarkBlue);
     overflow-x: hidden; 
     overflow-y: auto; 
-    height: 150%;
+    height: 105vh;
 }
 .black-overlay{
     background-color: rgb(0, 0, 0,0.5);
@@ -346,6 +346,7 @@
     stroke-width: 2px;
     font-weight: 600;
     fill: transparent;
+    stroke-dasharray: 0% 50%;
     /*animation: animateBigName 5s ease,fillName 800ms ease-in 4s forwards;*/
     position: relative;
    
@@ -380,6 +381,7 @@
     animation: h1 3s ease-in , h1-again 1s ease-in  3s forwards ;
     
   }
+
   @keyframes animateBigName{
     0%{
       stroke-dasharray: 0% 50%;
