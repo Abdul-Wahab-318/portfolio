@@ -275,8 +275,7 @@ function scrollTop()
   }
 }
 
-window.onload = function(){
-
+window.addEventListener('load' ,()=>{
   var loader=document.querySelector('#loader');
   loader.style.opacity='0';
   loader.style.zIndex='-100';
@@ -288,7 +287,4 @@ window.onload = function(){
   //ADDS ANIMATION TO INTRO SECTION ON LOAD
   var introText = document.querySelector('#introText')
   introText.classList.add("animateBigName")
-  
-
-}
-
+})
