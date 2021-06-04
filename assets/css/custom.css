@@ -381,7 +381,7 @@
     animation: h1 3s ease-in , h1-again 1s ease-in  3s forwards ;
     
   }
-
+ 
   @keyframes animateBigName{
     0%{
       stroke-dasharray: 0% 50%;
