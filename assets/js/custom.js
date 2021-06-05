@@ -178,8 +178,6 @@ $('.review-owl').owlCarousel({
 var theme = document.querySelector('#theme');
 var themeSwitch =document.querySelector('#theme-switch');
 theme.addEventListener('click',function(){
-  //themeSwitch.classList.toggle('icon-fa-toggle-on');
-  //themeSwitch.classList.toggle('icon-fa-toggle-off');
   themeSwitch.classList.toggle('rotateSwitch');
   themeSwitch.classList.toggle('unrotateSwitch');
   //changed switched icon
@@ -288,3 +286,6 @@ window.addEventListener('load' ,()=>{
   var introText = document.querySelector('#introText')
   introText.classList.add("animateBigName")
 })
+
+
+document.addEventListener('touchstart', ()=>{}, {passive: true});
