@@ -75,7 +75,6 @@ function toggleHeaderAnime()
 
   h1.addEventListener('animationend', function(){
   h1.removeAttribute('data-text');
-  console.log('yee');
   h1.innerHTML="WEB DEVELOPER ...";
   h1.setAttribute('data-text','WEB DEVELOPER ...');
               
